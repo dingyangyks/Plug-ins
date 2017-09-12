@@ -1,0 +1,43 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+.wrap{
+    height: 100%;
+    /*width: 400%;*/
+}
+
+.container,.item{
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    background:url(./img/a1.jpg) no-repeat;
+    background-size: 2560px 1080px;
+}
+
+#item2{
+   background-image: url(./img/a2.jpg);
+}
+
+#item3{
+    background-image: url(./img/a3.jpg);
+}
+
+#item4{
+    background-image: url(./img/a4.jpg);
+}
+
+.left{
+    float: left;
+    width: 25%;
+}

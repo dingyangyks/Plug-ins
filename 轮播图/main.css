@@ -1,0 +1,84 @@
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*轮播图*/
+.slideshow {
+    float: left;
+    width: 790px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow>ul{
+    font-size: 0px;
+    height: 340px;
+    position: relative;
+    width: 5530px;
+}
+
+.slideshow>ul>li{
+    float: left;
+}
+
+
+
+/*按钮*/
+.slideshow-left-btn {
+    background: rgba(158, 158, 158, 0.3) url(./img/focus_control_btn.png) center 24px no-repeat;
+}
+
+.slideshow-right-btn {
+    right: 0;
+    background: rgba(158, 158, 158, 0.3) url(./img/focus_control_btn.png) center -174px no-repeat;
+}
+
+.slideshow-left-btn, .slideshow-right-btn {
+    width: 45px;
+    height: 105px;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    z-index: 2;
+}
+
+.slideshow:hover > .slideshow-left-btn,
+.slideshow:hover > .slideshow-right-btn,
+.slideshow:hover > .img-point{
+    opacity: 1;
+}
+
+/*焦点*/
+.img-point {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,0);
+    transition: opacity 0.5s ease-in;
+}
+
+.img-point i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    background-color: rgba(158, 158, 158, 0.3);
+}
+
+.select{
+    background-color: #ea8736;
+}
+
+.img-point i.select {
+    background-color: #ea8736;
+}
+
