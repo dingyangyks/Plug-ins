@@ -11,9 +11,6 @@ var img_item = ['./img/5995829aN84f0e71b.jpg',
     './img/59954e1dNb2e1cfb5.jpg',
     './img//599a868aNf83ce587.jpg'];
 
-
-
-
 // 轮播图
 var imgNum = 1;
 var moveEnd = true;

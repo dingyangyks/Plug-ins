@@ -7,17 +7,18 @@ ul,li{
 /*轮播图*/
 .slideshow {
     float: left;
-    width: 790px;
-    height: 340px;
+    /*width: 790px;*/
+    /*height: 340px;*/
     overflow: hidden;
     position: relative;
 }
 
 .slideshow>ul{
     font-size: 0px;
-    height: 340px;
     position: relative;
-    width: 5530px;
+    overflow: hidden;
+    /*width: 5530px;*/
+    /*height: 340px;*/
 }
 
 .slideshow>ul>li{
