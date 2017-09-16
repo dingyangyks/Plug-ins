@@ -2,7 +2,7 @@
 
     $.fn.Carousel = function (setting) {
         var carousel = new Carousel(this, setting);//this = 所选取的元素
-        return carousel.init();
+        return carousel.init();//写return是为了方便链式调用
     };
 
     function Carousel(elem, setting) {

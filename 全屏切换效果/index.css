@@ -7,22 +7,33 @@
 html,body{
     width: 100%;
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .wrap{
     height: 100%;
-    /*width: 400%;*/
+    position: relative;
+    width: 100%;
 }
 
-.container,.item{
+.vertical .screenSwitch{
     width: 100%;
+}
+.horizontal .screenSwitch {
     height: 100%;
 }
-
 .item{
-    background:url(./img/a1.jpg) no-repeat;
-    background-size: 2560px 1080px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.horizontal .item {
+    float: left;
+}
+
+/*#item1{
+    background-image:url(./img/a1.jpg);
 }
 
 #item2{
@@ -35,9 +46,57 @@ html,body{
 
 #item4{
     background-image: url(./img/a4.jpg);
-}
+}*/
 
 .left{
     float: left;
     width: 25%;
 }
+
+/*垂直*/
+.vertical .points-wrap {
+    width: 30px;
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+/*水平*/
+.horizontal .points-wrap{
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%,0);
+}
+
+/*垂直*/
+.vertical .points{
+    display: block;
+    margin: 10px auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #7b7a7d;
+}
+
+/*水平*/
+.horizontal .points{
+    float: left;
+    display: block;
+    margin: auto 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #7b7a7d;
+    transform: translate(-50%,-50%);
+
+}
+
+.active{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6ee028;
+    background: none;
+}
+

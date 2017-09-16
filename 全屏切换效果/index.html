@@ -9,14 +9,22 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="container">
-            <div class="item" id="item1"></div>
-            <div class="item" id="item2"></div>
-            <div class="item" id="item3"></div>
-            <div class="item" id="item4"></div>
+        <div class="screenSwitch">
         </div>
     </div>
     <script src="./jquery-3.1.1.js"></script>
     <script src="./index.js"></script>
+    <script>    
+        var setting = {
+            imgArr:['./img/a1.jpg','./img/a2.jpg','./img/a3.jpg','./img/a4.jpg'],
+            duration:500,
+            loop:true,
+            easing:'ease-in-out',
+            direction: 'horizontal'
+        }
+        var screenSwitch = $('.screenSwitch').ScreenSwitch(setting);
+
+       
+    </script>
 </body>
 </html>
